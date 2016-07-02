@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 25px;
+  font-family: Georgia, Utopia, Charter, serif;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 200;
+}
+
+#controls {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 500;
+}
+
+#control-btn {
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
+  z-index: 500;
+}
+
+#control-btn:hover {
+  cursor: pointer;
+  color: red;
+}
+
+#controls {
+  background: black;
+  opacity: 0.8;
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  padding: 15px;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.hide {
+  display: none;
+}
+
+.control-heading {
+  color: #FFF;
+  text-align: center;
+}
+
+.label-country {
+  color: #cb6b6c;
+}
+
+.label-city {
+  color: #6bcbca;
+  display: block;
+}
+
+@media screen and (orientation:portrait) {
+  #controls {
+    font-size: medium;
+  }
+}
